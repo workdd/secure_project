@@ -49,11 +49,11 @@ def lambda_handler(event, context):
     for ip in ip_set:
         cnt = total_ip.count(ip)
 
-        # 동시 요청 수가 정의해놓은 수보다 많을 경우
+        # if over the threshold
         if cnt >= attacker_threshold:
             # Waf Ip set 형식으로 변경
             ip += '/32'
-            # 공격자라고 판단할 ip_list에 추가함
+            # add ip to attacker ip list
             attacker_ip_list.append(ip)
 
     # update waf ip_set
