@@ -6,7 +6,7 @@ def lambda_handler(event, context):
     http = urllib3.PoolManager()
     request_num = int(event['num'])
     for i in range(request_num):
-        res = http.request('GET', 'https://d3lpuqwxhx5dxu.cloudfront.net/test.html')
+        res = http.request('GET', 'https://dv0eo9brrjhgc.cloudfront.net/web.html')
 
     response = res.data
 
