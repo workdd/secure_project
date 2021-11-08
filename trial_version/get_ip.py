@@ -1,4 +1,4 @@
-with open('ETPAE9A6E0LS4.2021-11-03-00.f5c8dbff') as f:
+with open('../ETPAE9A6E0LS4.2021-11-03-00.f5c8dbff') as f:
     data = f.read()
 
 data = data.split('\n')
